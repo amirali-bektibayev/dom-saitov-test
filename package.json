@@ -1,5 +1,6 @@
 {
   "name": "gulp-2022",
+  "homepage": "https://amirali-bektibayev.github.io/dom-saitov-test/",
   "version": "1.5.3",
   "description": "Сборка Gulp+Webpack+Babel",
   "main": "gulpfile.js",
