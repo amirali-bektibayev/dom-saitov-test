@@ -244,8 +244,7 @@
                 margin: 0px 0 20px;
             }
             &-item {
-                display: flex;
-                justify-content: space-between;
+                flex-direction: column;
                 padding: 16px 20px;
                 border-radius: 10px;
                 background-color: $greyColorBg;
@@ -257,6 +256,7 @@
                 color: $greyColorText;
                 font-size: 20px;
                 line-height: 120%;
+                margin-bottom: 5px;
             }
     
             &-value {

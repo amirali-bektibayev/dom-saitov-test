@@ -14,6 +14,7 @@
 }
 
 .section-banner-2 {
+    padding: 9px 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -31,11 +32,18 @@
 
 .section-banner__title-1 {
     font-size: 50px;
+    letter-spacing: 2.7px;
     text-align: center;
+}
+
+.section-banner-2__icon {
+    margin-right: 35px;
 }
 
 .section-banner__title-2 {
     font-size: 40px;
+    flex: 1 1 auto;
+    letter-spacing: 2px;
 }
 
 .section-banner__title a {
@@ -66,7 +74,12 @@
     .section-flex-wrapper {
         flex-direction: column;
     }
+
+
+
     .section-banner-2 {
+        background-size: auto;
+        padding: 20px 0;
         &__wrapper {
             flex-direction: column;
         }
