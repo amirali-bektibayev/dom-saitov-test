@@ -1,0 +1,46 @@
+.what-to-know {
+    padding: 100px 0;
+    &__title {
+        margin-bottom: 48px;
+    }
+    &__info {
+        width: calc(50% - 20px);
+        &::before {
+            margin-right: 40px;
+        }
+        &-img {
+            margin-bottom: 24px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
+
+/* < 480px */
+@media (max-width: 479px) {
+    .what-to-know {
+        padding: 50px 0;
+        &__info {
+            width: 100%;
+            &::before {
+                margin-right: 0px;
+            }
+            &-img {
+                margin-bottom: 20px;
+                img {
+                    display: block;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+
+            &-text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

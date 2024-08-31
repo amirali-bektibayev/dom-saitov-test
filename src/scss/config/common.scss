@@ -1,0 +1,197 @@
+/**/
+
+body {
+    background-color: #f5f5f5;
+}
+
+.flex-dir-row-rev {
+    flex-direction: row-reverse;
+}
+
+/* Стандартный контейнер для разрешения 1920px и выше */
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* > 1920px */
+@media (min-width: 1921px) {
+    .container {
+        width: 1600px; /* Или 85% от ширины экрана */
+    }
+}
+
+/* 1440px - 1920px */
+@media (min-width: 1440px) and (max-width: 1920px) {
+    .container {
+        width: 1400px;
+    }
+}
+
+/* 1200px - 1440px */
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .container {
+        width: 95%;
+        max-width: 1200px;
+    }
+}
+
+/* 768px - 1199px */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 90%;
+        max-width: 720px;
+    }
+}
+
+/* 480px - 768px */
+@media (min-width: 480px) and (max-width: 767px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* < 480px */
+@media (max-width: 479px) {
+    .container {
+        width: 95%;
+    }
+
+    body section {
+        padding: 50px 0;
+    }
+}
+
+
+/**/
+
+.btn-primary {
+    padding: 16px 0;
+    min-height: 56px;
+    min-width: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $mainBlue;
+    border-radius: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-primary span {
+    font-family: $mainFont;
+    color: $whiteColor;
+    font-size: 20px;
+}
+
+.btn-primary:hover {
+    opacity: .8;
+}
+
+.btn-secondary {
+    padding: 16px 0;
+    min-height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid $mainBlue;
+    border-radius: 50px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-secondary span {
+    font-family: $mainFont;
+    color: $mainBlue;
+    font-size: 18px;
+}
+
+.btn-secondary:hover {
+    opacity: .8;
+}
+
+.btn-primary:disabled {
+    background-color: #B3C8D1;
+    cursor: not-allowed
+}
+
+/**/
+
+.yellow-bg {
+    background-color: $yellowBg;
+}
+
+
+
+/* Заголовки, тексты и тд */
+
+.primary-title {
+    font-family: $mainFont;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 3.8px;
+    font-weight: bold;
+    color: $darkColor;
+    margin-bottom: 48px;
+}
+
+.primary-text {
+    font-family: $mainFont;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    color: $darkColor;
+}
+
+@media (max-width: 479px) {
+    .primary-title {
+        font-size: 27px;
+        line-height: 100%;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .primary-text {
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 1px;
+    }
+}
+
+/**/
+
+.li-done {
+    position: relative;
+    font-family: $mainFont;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 1.5px;
+    color: $darkColor;
+    margin-bottom: 32px;
+    padding-left: 48px;
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: 0;
+        transform: translateY(25%);
+        width: 32px;
+        height: 32px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='34' height='32' viewBox='0 0 34 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 13.2632L16.5185 20L32 4' stroke='%230297D4' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M25.3207 5.08139C25.9102 4.39077 25.8324 3.34503 25.085 2.82942C22.4023 0.97883 19.2057 -0.016116 15.9205 0.000197266C12.085 0.0192437 8.3839 1.41553 5.49153 3.93467C2.59917 6.45382 0.70801 9.92819 0.16259 13.7248C-0.382829 17.5214 0.453785 21.3877 2.52002 24.6192C4.58626 27.8507 7.74461 30.2324 11.4197 31.3304C15.0948 32.4284 19.042 32.1697 22.5423 30.6013C26.0426 29.0329 28.863 26.2593 30.4898 22.7858C31.8831 19.8107 32.3212 16.4916 31.7671 13.28C31.6128 12.3852 30.6962 11.8758 29.8219 12.1211C28.9476 12.3665 28.4492 13.2741 28.5797 14.1727C28.9352 16.6197 28.5706 19.1304 27.5119 21.3912C26.2195 24.1509 23.9787 26.3544 21.1978 27.6005C18.4168 28.8465 15.2808 29.0521 12.361 28.1797C9.44124 27.3074 6.93199 25.4151 5.2904 22.8478C3.64882 20.2804 2.98414 17.2088 3.41747 14.1924C3.85079 11.1761 5.35328 8.41574 7.65121 6.41432C9.94915 4.4129 12.8896 3.30358 15.9369 3.28845C18.4333 3.27605 20.8652 3.99865 22.9372 5.34808C23.6981 5.84363 24.7311 5.77202 25.3207 5.08139Z' fill='%230297D4'/%3E%3C/svg%3E%0A");
+    }
+}
+
+@media (max-width: 479px) {
+    .li-done {
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 1px;
+    }
+}
+
+    

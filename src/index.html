@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    @@include('html/header.html', {})
+    <section class="section-banner section-banner-1" >
+      <div class="container">
+        <div class="section-banner__title section-banner__title-1">Телефоны для вызова эвакуатора в <a href="#" >Москве</a></div>
+      </div>
+    </section>
+    <section class="main" >
+      <div class="container">
+        <div class="main__wrapper">
+          @@include('html/components/car-item.html', {
+            'title': 'Эвакуатор 1',
+            'data-ad': '63',
+            'car-img': '1',
+            "info-1": '5 000 руб',
+            "info-2": '3 000 руб',
+            "info-3": 'нет',
+            "info-4": 'нет',
+            "info-5": '50 руб/км',
+            'extratext': 'Эвакуатор авто. Всегда на связи! Быстро и надежно',
+          })
+          @@include('html/components/car-item.html', {
+            'title': 'Эвакуатор 2',
+            'data-ad': '64',
+            'car-img': '2',
+            "info-1": '4 000 руб',
+            "info-2": '3 000 руб',
+            "info-3": '4 000 руб',
+            "info-4": '6 000 руб',
+            "info-5": '50 руб/км',
+            'extratext': 'Круглосуточно. Стоянка в районе метро Технопарк, быстро доберусь в любую точку города.',
+          })
+          @@include('html/components/car-item.html', {
+            'title': 'Эвакуатор 3',
+            'data-ad': '65',
+            'car-img': '1',
+            "info-1": '5 000 руб',
+            "info-2": '3 000 руб',
+            "info-3": 'нет',
+            "info-4": 'нет',
+            "info-5": '50 руб/км',
+            'extratext': 'Эвакуатор авто. Всегда на связи! Быстро и надежно',
+          })
+          @@include('html/components/car-item.html', {
+            'title': 'Эвакуатор 4',
+            'data-ad': '66',
+            'car-img': '2',
+            "info-1": '4 000 руб',
+            "info-2": '3 000 руб',
+            "info-3": '4 000 руб',
+            "info-4": '6 000 руб',
+            "info-5": '50 руб/км',
+            'extratext': 'Круглосуточно. Стоянка в районе метро Технопарк, быстро доберусь в любую точку города.',
+          })
+          @@include('html/components/pagination.html', {})
+        </div>
+      </div>
+    </section>
+    <section class="section-banner section-banner-2" >
+      <div class="container">
+        <div class="section-banner-2__wrapper">
+          <div class="section-banner-2__icon"><img src="./images/banner-track.png" alt=""></div>
+          <div class="section-banner__title section-banner__title-2">Здесь может быть ваш эвакуатор</div>
+          <button class="section-banner-btn btn-primary"><span>Добавить объявление</span></button>
+        </div>
+      </div>
+    </section>
+    @@include('html/sections/how-to-call.html', {})
+    @@include('html/sections/what-to-know.html', {})
+    @@include('html/sections/what-inside.html', {})
+    @@include('html/sections/pros.html', {})
+    @@include('html/sections/weight.html', {}) 
+    @@include('html/sections/info.html', {}) 
+    @@include('html/sections/price.html', {}) 
+    @@include('html/footer.html', {}) 
+  </body>
+  @@include('html/script.html', {})
+</html> 

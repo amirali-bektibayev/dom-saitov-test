@@ -1,0 +1,54 @@
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Inter;
+	font-display: swap;
+	src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-display: swap;
+	src: 
+		url("../../fonts/SFPRODISPLAYREGULAR.woff2") format("woff2"), 
+		url("../../fonts/SFPRODISPLAYREGULAR.woff") format("woff"), 
+		url("../../fonts/SFPRODISPLAYREGULAR.ttf") format("truetype"), 
+		url("../../fonts/SFPRODISPLAYREGULAR.otf") format("opentype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-display: swap;
+	src: 
+		url("../../fonts/SF-Pro-Display-Semibold.woff2") format("woff2"), 
+		url("../../fonts/SF-Pro-Display-Semibold.woff") format("woff"), 
+		url("../../fonts/SF-Pro-Display-Semibold.ttf") format("truetype"), 
+		url("../../fonts/SF-Pro-Display-Semibold.otf") format("opentype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF Pro Text';
+	font-display: swap;
+	src: 
+		url("../../fonts/SFPRODISPLAYBOLD.woff2") format("woff2"), 
+		url("../../fonts/SFPRODISPLAYBOLD.woff") format("woff"), 
+		url("../../fonts/SFPRODISPLAYBOLD.ttf") format("truetype"), 
+		url("../../fonts/SFPRODISPLAYBOLD.otf") format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+

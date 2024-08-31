@@ -1,0 +1,70 @@
+.how-to-call {
+    padding: 100px 0;
+    background-color: #fff;
+    &__info {
+        flex: 0 0 50%;
+        margin-right: 19px;
+        &-title {
+            margin-bottom: 48px;
+        }
+    }
+
+    &__img {
+        transform: translateY(-16px);
+        // flex: 0 0 50%;
+        // height: 611px;
+        // background-size: contain;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-image: url('../../images/how-to-call.png');
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .how-to-call {
+        padding: 100px 0;
+        background-color: #fff;
+        &__info {
+            flex: 0 0 50%;
+            margin-right: 19px;
+            &-title {
+                margin-bottom: 48px;
+            }
+        }
+    
+        &__img {
+            transform: translateY(-16px);
+            img {
+                width: 100%;
+            }
+            // flex: 0 0 50%;
+            // height: 611px;
+            // background-size: contain;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-image: url('../../images/how-to-call.png');
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .how-to-call {
+        padding: 50px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__info {
+            &-title {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__img {
+            transform: none;
+            margin-top: 30px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

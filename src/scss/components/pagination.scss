@@ -1,0 +1,47 @@
+.pagination {
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__count {
+        &-wrapper {
+            display: flex;
+        }
+    }
+
+    &__nav {
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        &-prev {
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='26' viewBox='0 0 15 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 1L2 13L14 25' stroke='%230297D4' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        }
+        &-next {
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='26' viewBox='0 0 15 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L13 13L1 25' stroke='%230297D4' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+
+    &__item {
+        margin-right: 18px;
+        font-family: $mainFont;
+        font-size: 26px;
+        line-height: 120%;
+        letter-spacing: 1.5px;
+        color: $mainBlue;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 52px;
+        height: 52px;
+        border: 1px solid $mainBlue;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: .3s;
+        &_active {
+            background-color: $mainBlue;
+            color: #fff;
+        }
+    }
+}
